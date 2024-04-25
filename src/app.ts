@@ -10,7 +10,7 @@ const app: any = express()
 app.use(cors())
 
 
-app.use('/drivers/api/v1', proxy('https://dooryd-api-drivers.onrender.com'))
+app.use('/drivers/api/v1', proxy('https://dooryd-drivers-api.onrender.com'))
 app.use('/users/api/v1', proxy('https://admin-dqcw.onrender.com'))
 
 app.use(express.json());
